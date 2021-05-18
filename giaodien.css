@@ -1,0 +1,540 @@
+body{
+		background-color: white;
+	}
+.user:hover{
+	box-shadow: 8px 8px 8px 8px rgba(0.3, 0.3, 0.3, 0.3);
+}
+.user img{
+	width: 100%;
+	height: 100%;
+}
+/*phần upload*/
+.kt .btn{
+	border-radius: 5px;
+	margin-left: 35%;
+	margin-top: 10px; 
+}
+.skt {
+	text-overflow: ellipsis;
+	border-radius: 5px;
+	margin-left: 10%;
+	margin-top: 10px; 
+	padding:auto; 
+/*	min-width: 80px;*/
+}
+
+/*phần góp ý*/
+.open-button-response {
+	background-color: black;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.6;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 100px;
+	border-radius: 10px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup-response {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container-response {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+}
+
+/* Full-width textarea */
+.form-container-response textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container-response textarea:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container-response .btn-response {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.5;
+}
+
+/* Add a red background color to the cancel-response button */
+.form-container-response .cancel-response {
+	background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container-response .btn-response:hover, .open-button-response:hover {
+	opacity: 1;
+}
+/*/////////*/
+
+/*header chứa thanh Navbar*/
+.header{
+	width: 900px;
+	margin-left:20%;
+}
+/*ô search*/
+#search-form{
+	width: 80%;
+	margin-left: 25px;
+	padding-left: 20px;
+}
+#hint-file{
+	width: 80%;
+	font-weight: bold;
+	background-color: #ff776e;
+	font-size: 15px;
+	margin-left: 25px;
+	padding-left: 18px;
+	border-radius: 2px;
+	z-index: 1;
+	overflow: scroll;
+	overflow-x: hidden;
+	max-height: 67px;
+}
+#hint-file a{
+	color: white;
+}
+#hint-file::-webkit-scrollbar-thumb {
+	background-color: white;
+	border-radius: 10px;
+}
+/*Dòng kẻ dưới header*/
+.liner-header{
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+/*- ô hiển thị User*/
+.user{
+	border-radius: 50px;
+	position: absolute;
+	right: 10px;
+	height: 100%;
+	width: 60px;
+	transition: 0.25s;
+}
+/*cột upload*/
+.column-left{
+	float: left;
+	width: 20%;
+	margin: 0px 20px 0px 20px;
+	box-sizing: border-box;
+	position: ;
+	top: 70px;
+
+}
+/*nút upload*/
+.upload .btn{
+	border-radius: 70px;
+	width: 160px;
+	height: 100%;
+	font-size: 20px;
+	margin: 10px 0px 0px 50px;
+}
+
+/*cột item*/
+.column-right{
+	float: left;
+	width: 70%;
+	height: 100%;
+	box-sizing: border-box;
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+}
+
+/*Cột tiêu đề*/
+.column-right .title-store{
+	float: left;
+	padding: 7px 0px 7px 20px;
+}
+/*-------------------------*/
+/*Nút chuyển grid view -list view*/
+.column-right .action{
+	position: absolute;
+	right: 130px;
+	padding-top: 10px;
+}
+
+.action{
+	margin-right: 5%;
+}
+/*Chuyển giữa 2 dạng nút grid và list*/
+.switch-button{
+	display: inline-block;
+	position: relative;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: $transition;
+}
+/*-------------------------*/
+/*Thêm các biểu tượng cho box chức năng*/
+.gridbtn::before{
+	content: "\f0ca";
+	font-family: FontAwesome;
+}
+.no-gridbtn::before{
+	content: "\f00a";
+	font-family: FontAwesome;
+}
+/*-------------------------*/
+
+/*CSS các item*/
+.item-contain{
+	width: 100%;
+	height: 800px;
+  	overflow: scroll;
+  	overflow-x: hidden;
+  	padding-left: 20px;
+}
+div.item-header{
+	font-size: 99px;
+	margin-left: 100px;
+	position: sticky;
+	background-color: #72B885;
+	top: 0;
+}
+.hide-detail{
+	display: none;
+}
+
+.column-right .detail{
+	display: inline-block;
+	width: 24%;
+	color: black;
+	margin-right: 5px;
+	float: left;
+	font-size: 16px;
+}
+/* Thanh scroll bar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: gray;
+	border-radius: 10px;
+}
+/*định dang nút upload va create*/
+.feature .btn{
+	border-radius: 70px;
+	width: 160px;
+	height: 100%;
+	font-size: 20px;
+	margin: 10px 0px 0px 10%;
+}
+/*-------------------------*/
+/*Nơi chứa các tệp*/
+/*Ô chứa tệp*/
+.row{
+	float: left;
+	width: 19%;
+	margin: 7px 0px 10px 7px;
+	position: relative;
+}
+/*Ô chứa tệp dạng danh sách*/
+.list-row{
+	width: 100%;
+	height: 30%;
+	margin-top: -10px; 
+	margin-bottom: -80px;
+}
+.list-row .item-header{
+	margin-bottom: 60px;
+}
+/*Tệp được lưu trữ*/
+.item{
+	width: 300px;
+	text-align: center;
+
+	color: black;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 25px 10px 5px;
+	border-radius: 7px;
+	margin-left: 10px;
+	height: auto;
+}
+/*Các thành phần bên trong tệp*/
+.item img{
+	width: 100%;
+
+}
+.item:hover{	
+	box-shadow: 4px 8px 15px 2px rgba(0, 0, 0, 0.3);
+	transition: 0.25s;
+}
+.item .item-info{
+	text-align: center;
+	height: 10%;
+	width: 144px;
+	font-size: 14px;
+	margin: auto;
+}
+.item .item-info .item-name{
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/*Tệp dưới dạng xem lưới*/
+.list-item{
+	float: none;
+	background-color: unset;
+	width: 8%;
+	margin: 0px 15px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-radius: 50px;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+	height: 60px;
+	margin-right: 45px;
+}
+.list-item:hover{
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.list-item img{
+	width: 80%;
+	border-radius: 50px;
+}
+.list-item img:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list-item .item-info .item-name{display: none;}
+.list-item .item-info .item-size{display: none;}
+.list-item .item-info .item-type{display: none;}
+.list-row .dropdonw-ctn{display: none;}
+
+.unliner{	display: none;}
+.liner{
+	display: block;
+	clear: both;
+}
+.item-detail-hide{display: none;}
+
+.item-detail{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 20%;
+	height: 40px;
+	color: black;
+	float: left;
+	font-size: 14px;
+	margin-right: 20px;
+	padding-top: 15px;
+}
+
+.item-action{
+	width: 30px;
+	font-family: FontAwesome;
+}
+
+.fa-pen::before{
+	content: "\f044";
+	font-family: FontAwesome;
+}
+.fa-download::before{
+	content: "\f019";
+	font-family: FontAwesome;
+}
+/*-------------------------*/
+@media only screen and (max-width: 1150px){
+	#search-form{
+		width: 65%;
+	}
+	.disable{
+		display: none;
+	}
+	.row{
+		width: 29%;
+		margin-right: 30px;
+	}
+	.list-row {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1100px){
+	#search-form{
+		width: 65%;
+	}
+	.disable{
+		display: none;
+	}
+	.row{
+		width: 35%;
+		margin-right: 30px;
+	}
+	.list-row {
+		width: 100%;
+	}
+
+}
+@media only screen and (max-width: 950px){
+	#search-form{
+		width: 50%;
+	}
+
+	.row{
+		width: 50%;
+		margin-right: 30px;
+	}
+	.list-row{
+		float: left;
+		width: 50%;
+		height: auto;
+		margin-bottom: 10px;
+		margin-top: 5px;
+		position: relative;
+		display: block;
+		background-color: white;
+		border-radius: 7px;
+	}
+	.item-detail{
+		margin-top: -8px;
+		display: block;
+		width: 100%;
+		text-align: center;
+		color: black;
+		font-size: 14px;
+		display: block;
+		margin-left: -20px;
+	}
+	.detail-name{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.dropdown{
+		display: none;
+	}
+	.detail-header{
+		display: none;
+	}
+	.item-header{
+		display: none;
+	}
+	.liner{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	#search-form{
+		width: 74%;
+	}
+	img{
+		margin: auto;
+	}
+	.feature .btn{
+		width: 76%;
+		font-size: 17px;
+		text-align: center;
+	}
+	.header{
+		margin-left:10%;
+	}
+	.navbar-nav{
+		display: none;
+	}
+	.column-left{
+		display: none;
+	}
+	.column-right{
+		border-left: 0px;
+		border-right: 0px;
+	}
+	.row{
+		margin-left: 37px; 
+		width: 100%;
+	}
+	.item{
+		width: 100%;
+	}
+	.item-contain{
+		overflow-y: hidden;
+		overflow: visible;
+	}
+	.item-info{
+		margin-left: 100px;
+	}
+
+	.dropdown button{
+		margin: 10px 20px 10px 0px;
+		float: left;
+		display: none;
+	}
+	.switch-button{
+		display: none;
+	}
+	.title-store{
+		margin-left: 20px;
+	}
+	.liner-header{
+		width: 150%;
+	}
+
+	img {
+		margin: auto;
+	}
+	.list-row{
+		clear: both;
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+		margin-top: 5px;
+		position: relative;
+		display: block;
+		background-color: white;
+		border-radius: 7px;
+	}
+	.list-item{
+		width: 100%;
+		text-align: center;
+		color: black;
+		padding: 10px 10px 10px 10px;
+		margin: 10px 25px 10px 5px;
+		border-radius: 7px;
+		height: 100%;
+	}
+	
+	.detail-name{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.dropdown{
+		display: none;
+	}
+	.action{
+		margin-right: -100px;
+	}
+}
